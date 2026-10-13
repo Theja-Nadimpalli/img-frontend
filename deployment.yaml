@@ -5,7 +5,7 @@ metadata :
     name : frontend-deployment
 
 spec :
-   replicas : 1
+   replicas : 3
 
    selector : 
        matchLabels :
@@ -21,7 +21,7 @@ spec :
              - name : frontend-container
                image : thejaraju/img-frontend:init
                ports : 
-                   - containerPort : 5173
+                   - containerPort : 80
 
           
 
